@@ -1,0 +1,67 @@
+/* Footer Area css
+============================================================================================ */
+.blog_version {
+	.footer_area {
+		background: #f9f9fd;
+		&:before {
+			content: none;
+		}
+	}
+}
+.footer_area {
+	padding-bottom: 25px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -200px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		background: #f9f9fd;
+		z-index: -1;
+	}
+	@media (max-width: 1024px) {
+		padding: 60px 0;
+	}
+	.footer_logo {
+		h4 {
+			font-size: 20px;
+			color: #000000;
+			margin-top: 35px;
+			text-transform: uppercase;
+		}
+	}
+	.footer_social {
+		margin: 25px 0 50px;
+		width: 100%;
+	    display: flex;
+	    justify-content: space-around;
+		a {
+			i {
+				color: #788489;
+				font-size: 3em;
+				@include transition();
+				@media (max-width: 576px) {
+					font-size: 25px;
+				}
+				&:hover {
+					color: $primary-color2;
+				}
+			}
+		}
+	}
+
+	.footer_bottom {
+		text-align: center;
+		p {
+			margin-bottom: 0;
+		}
+		a {
+			color: $primary-color2;
+		}
+	}
+}
+
+/* End Footer Area css
+============================================================================================ */
